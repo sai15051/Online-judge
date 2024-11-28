@@ -4,6 +4,8 @@ import Signup from "./components/signup";
 import Home from "./components/home";
 import Login from "./components/login";
 import Dashboard from "./components/dashboard";
+import Problemdetails from "./components/problemdetails";
+import Createproblem from "./components/createproblem";
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
-
+      <Route path="/getproblem/:id" element={<Problemdetails/>}/>
+      <Route path="/createproblem" element = {<Createproblem/>}/>
 
     </Routes>
   );
