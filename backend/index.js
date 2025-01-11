@@ -4,40 +4,49 @@ import { DBConnection } from './database/db.js';
 import dotenv from 'dotenv';
 import cors from "cors";
 
+const app = express();
 
 
-const app = express()
-// middlewares
 dotenv.config();
+
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
+
+
+const allowedOrigins = ["https://online-judge-fj7y.vercel.app"];
+
 app.use(
     cors({
-        origin: ["https://online-judge-fj7y.vercel.app"],
+        origin: (origin, callback) => {
+            
+            if (!origin || allowedOrigins.includes(origin)) {
+                callback(null, true);
+            } else {
+                callback(new Error("Not allowed by CORS"));
+            }
+        },
         methods: ["GET", "POST", "PUT", "DELETE"],
-        credentials: true,
+        credentials: true, 
+        optionsSuccessStatus: 200,
     })
 );
 
-app.options('*', cors({
-    origin: ["https://online-judge-fj7y.vercel.app"], 
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-}));
-
-
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://online-judge-fj7y.vercel.app'); 
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.header('Access-Control-Allow-Credentials', 'true');  
+    res.header("Access-Control-Allow-Origin", allowedOrigins[0]); 
+    res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.header("Access-Control-Allow-Credentials", "true");
     next();
 });
+
+
 app.use("/", router);
+
 
 DBConnection();
 
 
-app.listen(8001, () => {
-    console.log("server is listening on port 8001")
+const PORT =8001;
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
 });
