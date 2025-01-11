@@ -29,7 +29,7 @@ export const getallproblems = async (req, res) => {
     try {
         let query = {};
         if (problemname) {
-            query.problemname = { $regex: problemname, $options: "i" }; 
+            query.problemname = { $regex: problemname, $options: "i" };
         }
         const problems = await problem.find(query);
         res.json(problems);
@@ -60,6 +60,28 @@ export const deleteproblem = async (req, res) => {
             return res.json({ message: "problem not found", success: false });
         }
         res.json({ message: "problem deleted successfully", success: true });
+    } catch (error) {
+        console.log(error);
+        res.json({ message: error.message, success: false });
+    }
+};
+export const update = async (req, res) => {
+    const { id } = req.params;
+    const { statement, inputformat, outputformat } = req.body;
+    const updatedFields = {
+        "description.statement": statement,
+        "description.inputformat": inputformat,
+        "description.outputformat": outputformat,
+    };
+    try {
+        const Problem = await problem.findByIdAndUpdate(id, {
+            $set: updatedFields,
+        });
+        if (!Problem) {
+            return res.json({ message: "problem not found", success: false });
+        }
+        res.json({ message: "problem updated successfully", success: true });
+        console.log(Problem.problemname);
     } catch (error) {
         console.log(error);
         res.json({ message: error.message, success: false });

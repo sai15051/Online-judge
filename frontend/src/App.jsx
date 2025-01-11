@@ -6,6 +6,7 @@ import Login from "./components/login";
 import Dashboard from "./components/dashboard";
 import Problemdetails from "./components/problemdetails";
 import Createproblem from "./components/createproblem";
+import EditProblem from "./components/EditProblem";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/getproblem/:id" element={<Problemdetails/>}/>
       <Route path="/createproblem" element = {<Createproblem/>}/>
+      <Route path="/edit-problem/:id" element = {<EditProblem/>}/>
 
     </Routes>
   );

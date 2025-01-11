@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { signup,login } from "../controllers/authcontroller.js";
-import { createproblem,getproblembyid,getallproblems,deleteproblem } from "../controllers/problemcontroller.js";
+import { createproblem,getproblembyid,getallproblems,deleteproblem,update } from "../controllers/problemcontroller.js";
 import {runcode,judge} from "../controllers/compilercontroller.js"
 const router = Router();
 
@@ -13,7 +13,9 @@ router.get("/getallproblems", getallproblems);
 router.get("/getproblembyid/:id",getproblembyid);
 router.delete("/deleteproblem/:id",deleteproblem);
 router.post("/run",runcode);
-router.post("/submit",judge)
+router.post("/submit",judge);
+router.put("/update/:id",update);
+
 
 
 

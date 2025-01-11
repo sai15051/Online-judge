@@ -142,7 +142,7 @@ const Createproblem = () => {
                     <label className="block font-medium">Test Cases:</label>
                     {problemData.testcases.map((testcase, index) => (
                         <div key={index} className="mb-2">
-                            <input
+                            <textarea
                                 type="text"
                                 name={`testcase.${index}.input`}
                                 placeholder="Input"
@@ -150,7 +150,7 @@ const Createproblem = () => {
                                 onChange={handleChange}
                                 className="mr-2 p-2 border rounded"
                             />
-                            <input
+                            <textarea
                                 type="text"
                                 name={`testcase.${index}.expectedoutput`}
                                 placeholder="Expected Output"

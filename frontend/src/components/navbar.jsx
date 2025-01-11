@@ -29,14 +29,14 @@ const Navbar = () => {
             alt="Flowbite Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            codeforce
+            CODER
           </span>
         </a>
         <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse relative">
-          {/* Dropdown Button */}
+          
           <button
             type="button"
-            // className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+           
             onClick={toggleDropdown}
           >
             <span className="sr-only">Open user menu</span>
@@ -47,20 +47,20 @@ const Navbar = () => {
             />
           </button>
 
-          {/* Dropdown Menu */}
+          
           {isDropdownOpen && (
             <div
               className="absolute top-12 right-0 z-50 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
               id="user-dropdown"
             >
-              <div className="px-4 py-3">
+              {/* <div className="px-4 py-3">
                 <span className="block text-sm text-gray-900 dark:text-white">
                   sumanth
                 </span>
                 <span className="block text-sm text-gray-500 truncate dark:text-gray-400">
                   sumanth@gmail.com
                 </span>
-              </div>
+              </div> */}
               <ul className="py-2" aria-labelledby="user-menu-button">
                 <li>
                   <a
