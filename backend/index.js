@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 app.use(
     cors({
-        origin: ["http://localhost:5173",'https://online-judge-fj7y.vercel.app'],
+        origin: ["https://online-judge-fj7y.vercel.app"],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
     })
