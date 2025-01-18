@@ -33,7 +33,7 @@
 `REACT JS`
 
 <div style="display: flex;">
-  <img src="https://github.com/sai15051/Online-judge/tree/main/frontend/src/assets/reactlogo.png" width="160"  />
+  <img src="https://github.com/sai15051/Online-judge/blob/main/frontend/src/assets/reactlogo.png" width="160"  />
 </div>
 
 #### BACKEND
@@ -42,8 +42,8 @@
 `EXPRESS JS`
 
 <div style="display: flex;">
-  <img src="https://github.com/sai15051/Online-judge/tree/main/frontend/src/assets/expressjslogo.png" width="130" style="margin-right: 10px;" />
-  <img src="https://github.com/sai15051/Online-judge/tree/main/frontend/src/assets/nodejslogo.png" width="190" />
+  <img src="https://github.com/sai15051/Online-judge/blob/main/frontend/src/assets/expressjslogo.png" width="130" style="margin-right: 10px;" />
+  <img src="https://github.com/sai15051/Online-judge/blob/main/frontend/src/assets/nodejslogo.png" width="190" />
 </div>
 
 
@@ -51,8 +51,8 @@
 `MONGODB`
 
 <div style="display: flex;">
-  <img src="https://github.com/sai15051/Online-judge/tree/main/frontend/src/assets/mogodblogo.png" width="160" style="margin-right: 10px;" />
-  <img src="https://github.com/sai15051/Online-judge/tree/main/frontend/src/assets/136225328/506071de-9eee-4743-9d5a-f913275b091e" width="130" />
+  <img src="https://github.com/sai15051/Online-judge/blob/main/frontend/src/assets/mogodblogo.png" width="160" style="margin-right: 10px;" />
+  
 </div>
 
 
@@ -61,7 +61,7 @@
 Jason Web Token `(JWT)` - Used to ensure robust **AUTHENTICATION** and **AUTHORIZATION**
 
 <div style="display: flex;">
-  <img src="https://github.com/sai15051/Online-judge/tree/main/frontend/src/assets/jwtlogo.png" width="250" />
+  <img src="https://github.com/sai15051/Online-judge/blob/main/frontend/src/assets/jwtlogo.png" width="250" />
 </div>
 
 
@@ -69,7 +69,7 @@ Jason Web Token `(JWT)` - Used to ensure robust **AUTHENTICATION** and **AUTHORI
 `DOCKER` - for **ISOLATION** of backend and the compilation part, to provide more **SECURITY** and increase **SCALIBILITY**.
 
 <div style="display: flex;">
-  <img src="https://github.com/sai15051/Online-judge/tree/main/frontend/src/assets/dockerlogo.png" width="250" />
+  <img src="https://github.com/sai15051/Online-judge/blob/main/frontend/src/assets/dockerlogo.png" width="250" />
 </div>
 
 
