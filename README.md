@@ -51,7 +51,7 @@
 `MONGODB`
 
 <div style="display: flex;">
-  <img src="https://github.com/sai15051/Online-judge/blob/main/frontend/src/assets/mogodblogo.png" width="160" style="margin-right: 10px;" />
+  <img src="https://github.com/sai15051/Online-judge/blob/main/frontend/src/assets/mongodblogo.png" width="160" style="margin-right: 10px;" />
   
 </div>
 
