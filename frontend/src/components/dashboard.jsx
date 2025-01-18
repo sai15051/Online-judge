@@ -37,7 +37,7 @@ const Dashboard = () => {
     return (
         <>
         <Navbar></Navbar> 
-        <div className="container mx-auto p-4 pt-40">
+        <div className="container mx-auto p-4 pt-15">
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg ">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

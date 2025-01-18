@@ -15,13 +15,7 @@
 * An online coding platform , where one can practice multiple Coding related concepts .
 * The platform has many **Coding Problems** with a detailed problem statement and some sample Test Cases is shown to user for better understanding of Problem Statement. 
 * The code is checked against various ` HIDDEN TESTCASES ` and returns a verdict as **PASSED** or **FAILED**
-* It also has a **HINTS** section , that gives user a short brief hint about the problem 
-* User can also filter out the questions based on tags , and can solve questions related to that particular topic.
-* Questions can also be filtered on the basis of **DIFFICULTY** level , which makes it accessible to for every kind of users , from bigginner to advanced.
-* It shows user an interface where one can see how many questions he/she has solved out of total based on difficulty level.
 * It supports multiple Coding Languages like **CPP** and **PYTHON** and Java to be added very soon.
-
-
 
 
 
