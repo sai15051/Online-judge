@@ -21,6 +21,44 @@ const allowedOrigins = [
     "https://online-judge-fj7y-git-main-sumanths-projects-952cfa2b.vercel.app",
     "https://online-judge-fj7y-4q598qt6e-sumanths-projects-952cfa2b.vercel.app",
 ];
+const TMDB_API_KEY = process.env.TMDB_API_KEY;
+const BASE_URL = 'https://api.themoviedb.org/3';
+
+// Trending movies (weekly)
+app.get('/api/trending', async (req, res) => {
+  const { page = 1 } = req.query;
+  try {
+    const response = await axios.get(`${BASE_URL}/trending/all/week`, {
+      params: {
+        api_key: TMDB_API_KEY,
+        language: 'en-US',
+        page
+      }
+    });
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error fetching trending movies:', error.message);
+    res.status(500).json({ error: 'Failed to fetch trending movies' });
+  }
+});
+
+
+app.get('/api/movie/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const response = await axios.get(`${BASE_URL}/movie/${id}`, {
+      params: {
+        api_key: TMDB_API_KEY,
+        language: 'en-US',
+      }
+    });
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error fetching movie details:', error.message);
+    res.status(500).json({ error: 'Failed to fetch movie details' });
+  }
+});
+
 
 app.use(
     cors({
