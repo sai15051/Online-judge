@@ -15,6 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 
 const allowedOrigins = [
     "https://online-judge-fj7y.vercel.app",
+    "https://movie-flix-app-lac.vercel.app",
+    "https://movie-flix-app-sumanths-projects-952cfa2b.vercel.app",
+    "https://movie-flix-app-git-master-sumanths-projects-952cfa2b.vercel.app",
     "https://online-judge-fj7y-git-main-sumanths-projects-952cfa2b.vercel.app",
     "https://online-judge-fj7y-4q598qt6e-sumanths-projects-952cfa2b.vercel.app",
 ];
