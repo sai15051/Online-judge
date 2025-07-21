@@ -21,7 +21,7 @@ const allowedOrigins = [
     "https://online-judge-fj7y-git-main-sumanths-projects-952cfa2b.vercel.app",
     "https://online-judge-fj7y-4q598qt6e-sumanths-projects-952cfa2b.vercel.app",
 ];
-const TMDB_API_KEY = '7c4829680c5dc82e506e4cf962a26187';
+const TMDB_API_KEY =  process.env.TMDB_API_KEY;
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 // Trending movies (weekly)
